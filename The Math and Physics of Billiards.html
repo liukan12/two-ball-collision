@@ -1,0 +1,214 @@
+
+<!-- saved from url=(0067)http://archive.ncsa.illinois.edu/Classes/MATH198/townsend/math.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>The Math and Physics of Billiards</title>
+<link rel="stylesheet" href="./The Math and Physics of Billiards_files/stylesheet.css" type="text/css">
+</head>
+
+<body>
+
+<h1>The Math and Physics of Billiards</h1>
+
+<a name="SHOT"><h2>SHOT</h2></a>
+For the purposes of my program, I am equating the motion of drawing the cue back
+to that of pulling on a spring.  This assumes that the distance the cue is drawn
+away from the cue ball is directly proportional to the desired power of the shot,
+which is usually the case.  Using <i>Hooke's Law</i>, which describes the motion
+of a spring with the equation <i>F=-kx</i> , I can calculate the force applied to
+the cue ball using the distance back the cue is drawn.<br><br>
+Given the force applied to the cue ball, there are two quantities I must calculate
+in this stage of the simulation.  The first is the initial velocity of the ball
+that results from the hit.  To calculate this, I use Newton's Second Law, given by<br>
+<center><img src="./The Math and Physics of Billiards_files/eq1.jpg">.</center><br>
+Using <i>Hooke's Law</i>, I use an adaptation of this equation derived below:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq2.jpg"></center><br>
+Since, for the purposes of the shot, we can assume the initial velocity of the cue
+ball is zero, this equation becomes<br>
+<center><img src="./The Math and Physics of Billiards_files/eq3.jpg">.</center><br>
+The quantity Δ<i>t</i> in this equation is the amount of time the cue is in 
+contact with the ball, a quantity which I assume to be relatively constant and on 
+the order of 10 milliseconds.  The quantity <i>m</i> is the mass of the cue ball, 
+usually around .5 kg; and the quantity <i>k</i> is the spring constant from 
+<i>Hooke抯 Law</i>, which I arbitrarily assign a reasonable value (around 10 kg·m/s<sup>2</sup>).  
+The vector <b><i>x</i></b> is the difference between the cue ball and the tip of 
+the cue after it is drawn back.<br><br>
+Besides the initial translational velocity of the cue ball, there is also a 
+rotational aspect of the ball抯 movement that I must take into account.  Anybody who 
+has ever played a game of pool knows the importance of applying spin to the cue ball.  
+Therefore, the second quantity I must calculate is the angular velocity of the cue ball.  
+To do this, I need to know not only how far back the cue ball is drawn, but also where 
+the cue ball is hit with respect to its center of mass.  For example, assume the circle 
+below is a lateral view of the cue ball.<br>
+<center><img src="./The Math and Physics of Billiards_files/dg1.jpg"></center><br>
+If the small circle is the center of the cue ball (i.e. the center of mass), and the 
+ball is struck where the cross is, the ball will have an initial angular velocity 
+(top spin&#65533;) that will affect the ball抯 movement across the table as well as its 
+collision with any other ball.<br><br>
+To calculate the initial angular velocity, I use the concepts of rotational motion 
+and another adaptation of <i>Newton抯 Second Law</i>, given by the equation:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq4.jpg"></center><br>
+In this equation, <i>τ</i>(<i>torque</i>) is the rotational equivalent to force, 
+and is given by the equation
+<center><img src="./The Math and Physics of Billiards_files/eq5.jpg">.</center><br>
+Just as the cue must apply force to the ball to give it an initial velocity, the cue must 
+apply torque to the ball to give it an initial rotation.  The <i>r</i> in this equation 
+represents the radius from the center that the cue ball was struck.  Similarly, the <i>moment 
+of inertia</i> of the cue ball is the rotational equivalent of its mass, and is given by 
+the equation<br>
+<center><img src="./The Math and Physics of Billiards_files/eq6.jpg">.</center><br>
+Just as the force must overcome the mass of the ball in order to move it, the torque must 
+overcome the rotational inertia of the ball to rotate it.  The <i>R</i> in this equation 
+represents the radius of the cue ball itself.  These equations can be combined and manipulated 
+as shown below:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq7.jpg"></center><br>
+Since I can assume that the angular velocity is zero before the shot is made, this equation 
+simplifies to<br>
+<center><img src="./The Math and Physics of Billiards_files/eq8.jpg">.</center><br>
+The quantities in this equation are identical to those in the equation for linear velocity 
+given above, with the exception of the <i>r</i> and <i>R</i>, which I explained above.<br><br>
+Using these equations, I can calculate the initial linear and angular velocities of the cue ball 
+after the shot is made.  This completes the first stage of my simulation.<br><br><br>
+
+
+
+<a name="MOTION"><h2>BALL IN MOTION</h2></a>
+Once the ball has an initial linear and angular velocities, it begins to move across the table.  
+After it leaves the tip of the cue, the only force acting on the cue ball is the force of friction 
+from the felt.  The purpose of this stage of the simulation is to continually update those velocity 
+vectors according to this frictional force.<br><br>
+There are a couple important concepts that must be realized at this stage in the simulation.  The 
+first is that the ball is not always rolling.  Immediately after it is struck, it slides along the 
+felt for some period of time.  How far it slides depends on its initial velocity and spin.  The second 
+is that the force of friction is not being applied through the ball抯 center of mass.  It is actually 
+being applied along the ball抯 perimeter, and so it becomes necessary to calculate the ball抯 perimeter 
+speed.<br><br>
+The exact point at which a sliding ball becomes a rolling ball is given by the equation<br>
+<center><img src="./The Math and Physics of Billiards_files/eq9.jpg">.</center><br>
+In this equation, <i>v<sub>p</sub></i> is the perimeter velocity of the ball at its contact point with 
+the felt, <i>R</i> is the radius of the ball, and <i>ω</i> is the angular velocity of the ball.  
+The <i>perimeter velocity</i> of the ball at the point of contact with the felt can be calculated using 
+the equation<br>
+<center><img src="./The Math and Physics of Billiards_files/eq10.jpg">,</center><br>
+where <b><i>R</i></b> is the vector extending from the center of the ball to the point of contact with 
+the table.<br><br>
+To deal with friction, I use <i>Newton抯 Second Law</i> again.  This time, however, I am dealing with 
+the force of friction instead of the force applied by the cue.  The force of friction is given by the 
+equation<br>
+<center><img src="./The Math and Physics of Billiards_files/eq11.jpg">.</center><br>
+In this equation, <i>μ<sub>s</sub></i> is the coefficient of sliding friction (on the order or .2), 
+<i>m</i> is the mass of the ball, and <i>g</i> is the force of gravity.  Since the direction of this 
+force is opposite the perimeter velocity, we can modify this equation to represent the frictional force 
+vector:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq12.jpg"></center><br>
+Combining this with <i>Newton抯 Second Law</i>, we can get an equation for the change in the linear and 
+angular velocity of the ball.  The change in linear velocity is derived below:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq13.jpg"></center><br>
+Similarly, we can derive a formula for the change in angular velocity:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq14.jpg"></center><br>
+By combining these equations, I can calculate the velocity a certain time later using the initial linear 
+and angular velocity vectors.  However, these equations only apply to a sliding ball.  A rolling ball 
+behaves similarly, but with a different coefficient of friction: the coefficient of rolling friction, 
+<i>μ<sub>s</sub></i>.  The coefficient of rolling friction is significantly smaller than the 
+coefficient of static friction, on the order of .01.<br><br>
+I know whether the ball is sliding or rolling using the condition stated above.  Using this information, 
+I can calculate velocity changes during a given time step.  This completes the second stage of my simulation.<br><br><br>
+
+<a name="COLLISIONDETECTION"><h2>COLLISION DETECTION</h2></a>
+To detect collisions between two balls or between a ball and a rail, I use the vector equation of a line 
+to describe the position of a given ball at a given time:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq15.jpg"></center><br>
+In this equation, <i>r</i> represents the position of the ball, with <i>r<sub>0</sub></i> being the 
+initial position; and <i>v</i> represents the velocity of the ball.  For collisions between two balls, 
+I construct a position equation for each ball and calculate at what times they will be two radii apart.  
+This uses the distance formula, and the math is shown below.<br>
+<center><img src="./The Math and Physics of Billiards_files/eq16.jpg"></center><br>
+To simplify things, I make the following assignments:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq19.jpg"></center><br>
+The equation above now simplifies to:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq17.jpg"></center><br>
+Using the quadratic formula, I can easily solve for <i>t</i>:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq18.jpg"></center><br>
+This process is similar for collisions between balls and rails, but instead I calculate the difference 
+between the ball and the rail and set it equal to <i>R</i> (not 2<i>R</i>).<br><br>
+Using the times calculated, I can determine if a collision is going to occur within a given amount of 
+time.  If so, I move the balls to the time of that collision and recalculate their velocity vectors before 
+continuing.
+
+<a name="COLLISION"><h2>COLLISIONS</h2></a>
+If a collision is detected, I must recalculate the velocity vectors of the balls involved.  This stage of 
+the simulation is the most complex, and requires concepts such as <i>conservation of energy</i>, 
+<i>conservation of linear momentum</i>, and <i>conservation of angular momentum</i>.<br><br>
+For collisions between balls, the first step is to calculate the normal to the collision plane.  This is 
+along the line between the centers of the two balls, so the easiest way to calculate it is to normalize 
+the difference between the position vectors of the two balls.<br>
+<center><img src="./The Math and Physics of Billiards_files/eq20.jpg"></center><br>
+The next step is to divide each velocity vector into a normal component and a tangential component.  The 
+normal component for ball 2 will be in the direction of the normal vector, and the normal component for ball 
+1 will be in the direction opposite the normal vector.  The magnitude of these normal vectors can be calculated 
+using the dot product, as shown below.<br>
+<center><img src="./The Math and Physics of Billiards_files/eq21.jpg"></center><br>
+Once I抳e calculated the normal components of their velocity vectors, I can calculate the tangential components 
+using vector subtraction:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq22.jpg"></center><br>
+During the collision, the tangential velocity components do not change.  Using the normal components, I can 
+treat the collision as 1-dimensional.  This is depicted in the example below.  The red arrows represent the 
+velocity vectors immediately before the collision.  The blue arrows represent the normal components of those 
+vectors and the green arrows represent the tangential components of those vectors.  The black dotted line is 
+the collision plane.<br>
+<center><img src="./The Math and Physics of Billiards_files/dg2.jpg"></center><br>
+To deal with the one-dimensional collision, I once again use <i>Newton抯 Second Law</i> in yet a different 
+form, derived below:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq23.jpg"></center><br>
+The quantity <i>mv</i> is the linear momentum of the ball, denoted by the letter <i>p</i>.  Since there is no 
+net linear force on the two balls during the collision, Δ<i>p</i> is 0.  This is the concept known as 
+<i>conservation of linear momentum</i>, which states that the total momentum of a system will remain constant 
+in the absence of an outside force.  From this, I obtain the following equation:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq24.jpg"></center><br>
+Since the masses of all the balls are identical, we can cancel out the mass terms, yielding the equation above.  
+Using the <i>conservation of kinetic energy</i>, we can solve for <b>v<sub>1</sub>'</b> and  <b>v<sub>2</sub>'</b>.<br>
+<center><img src="./The Math and Physics of Billiards_files/eq25.jpg"></center><br>
+This equation yields two possible solutions, only one of which is practical.  Therefore, assuming total 
+elasticity in the balls,<br>
+<center><img src="./The Math and Physics of Billiards_files/eq26.jpg"></center><br>
+Now I return to the 2-dimensional collision problem above.  Since the normal velocity vectors can simply be 
+exchanged, the velocity of each ball immediately after the collision can be obtained by adding the tangential 
+velocity to the normal velocity of the ball it collides with.  This is shown below (the red arrows now represent 
+the velocity vectors immediately after the collision).<br>
+<center><img src="./The Math and Physics of Billiards_files/dg3.jpg"></center><br>
+The red vectors in the diagram on the right can be calculated using the equations below:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq27.jpg"></center><br><br>
+Now that I抳e handled the linear aspect of the collision, I have to consider the rotational aspect of it.  
+The concepts are similar, but must now concern angular momentum and angular velocity instead of linear momentum 
+and linear velocity.  Angular momentum is denoted by <i>L</i> and defined below:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq28.jpg"></center><br>
+A rotational equivalent to the version of <i>Newton抯 Second Law</i> given above yields the equation:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq29.jpg"></center><br>
+However, the net torque during the collision is not zero because of the friction between the balls.  Calculating 
+the torque applied by this frictional force requires calculating the perimeter velocities of each of the balls at 
+the point of collision.  This is similar to the way I calculated the frictional force applied by the felt in stage 
+2, with some slight changes.  There is a different coefficient of friction, <i>μ<sub>b</sub></i>, which I will 
+assign to be the coefficient of friction between the two balls (on the order of 0.1).  There is also extra 
+calculation required to determine the direction of the frictional force.  Since we are dealing with two perimeter 
+velocities, we have to find the relative velocity of one with respect to the other. For example, the perimeter 
+velocity of ball 2 with respect to ball 1 would be given by the equation<br>
+<center><img src="./The Math and Physics of Billiards_files/eq30.jpg">.</center><br>
+In this equation, vectors <b>r<sub>1</sub></b> and <b>r<sub>2</sub></b> are the vectors extending from the centers 
+of ball 1 and ball 2, respectively, to the point of contact between them.  To get the direction of the frictional 
+force applied to ball 2 by ball 1, I must add this relative perimeter velocity to the tangential velocity of ball 2.  
+To get the magnitude of the frictional force, I must know the normal force applied to ball 2 by ball 1, which is 
+proportional to the normal change in momentum of ball 1 (using the impulse-momentum theory given above).  All of this 
+yields the following equation for the frictional force applied to ball 2:<br>
+<center><img src="./The Math and Physics of Billiards_files/eq31.jpg"></center><br>
+Using this frictional force, I can calculate the change in angular velocity of ball 2 in the same way I did during 
+stage 2, substituting the proper frictional force.  This is shown below.<br>
+<center><img src="./The Math and Physics of Billiards_files/eq32.jpg"></center><br>
+The exact same calculations can be made for ball 1, allowing me to obtain the change in angular velocity for ball 1 
+as well.<br><br>
+For collisions between a ball and a rail, a similar process is necessary.
+
+<br><br><center><a href="http://archive.ncsa.illinois.edu/Classes/MATH198/townsend/index.html">Back to the Project Page</a></center>
+
+
+
+
+</body></html>
