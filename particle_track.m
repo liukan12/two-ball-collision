@@ -23,7 +23,7 @@ function varargout = particle_track(varargin)
 
 % Edit the above text to modify the response to help particle_track
 
-% Last Modified by GUIDE v2.5 21-Apr-2016 05:51:31
+% Last Modified by GUIDE v2.5 25-Apr-2016 18:09:07
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -82,13 +82,27 @@ function calculation1_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 % Particle_global;
 % clear;
+Particle_global;
+global P_Nm;
+global ITERATION;
+global TIME_STEP;
+global InputMaxcenterX;
+global InputMaxcenterY;
+global InputMaxdiam;
+global CHECK_TIMES;
+P_Nm=str2double(get(handles.edit1,'String'));
+InputMaxcenterX=str2double(get(handles.edit2,'String'));
+CHECK_TIMES=str2double(get(handles.edit3,'String'));
+TIME_STEP=str2double(get(handles.edit4,'String'));
+ITERATION=str2double(get(handles.edit5,'String'));
+InputMaxcenterY=str2double(get(handles.edit6,'String'));
+InputMaxdiam=str2double(get(handles.edit7,'String'));
 cla(handles.axes4);
+cla(handles.axes5);
+cla(handles.axes6);
+cla(handles.axes7);
+
 Particle_deposition;
-% Init=1;
-Particle_draw;
-
-
-
 
 
 function edit1_Callback(hObject, eventdata, handles)
@@ -274,9 +288,19 @@ set(handles.edit4,'string',0.5);
 set(handles.edit3,'string',5);
 set(handles.edit2,'string',100);
 set(handles.edit1,'string',100);
-
-
-
+set(handles.edit9,'string',[]);
+set(handles.Pxv,'string',0);
+set(handles.Pyv,'string',3);
+set(handles.Pdrawlast,'Value',1);
+set(handles.Prandomwalk,'Value',0);
+set(handles.Prandomwalk,'Value',0);
+set(handles.Pchain,'Value',0);
+set(handles.Pecollision,'Value',0);
+cla(handles.axes4);
+cla(handles.axes5);
+cla(handles.axes6);
+cla(handles.axes7);
+% END_REQUEST=0;
 
 
 
@@ -324,3 +348,194 @@ function listbox2_CreateFcn(hObject, eventdata, handles)
 if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
     set(hObject,'BackgroundColor','white');
 end
+
+
+
+function edit9_Callback(hObject, eventdata, handles)
+% hObject    handle to edit9 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of edit9 as text
+%        str2double(get(hObject,'String')) returns contents of edit9 as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function edit9_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit9 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --- Executes on button press in pushbutton3.
+function pushbutton3_Callback(hObject, eventdata, handles)
+% hObject    handle to pushbutton3 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+
+% --- If Enable == 'on', executes on mouse press in 5 pixel border.
+% --- Otherwise, executes on mouse press in 5 pixel border or over pushbutton3.
+function pushbutton3_ButtonDownFcn(hObject, eventdata, handles)
+% hObject    handle to pushbutton3 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+% global END_REQUEST;
+% END_REQUEST=1;
+% pause
+
+
+% --- If Enable == 'on', executes on mouse press in 5 pixel border.
+% --- Otherwise, executes on mouse press in 5 pixel border or over pushbutton2.
+function pushbutton2_ButtonDownFcn(hObject, eventdata, handles)
+% hObject    handle to pushbutton2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+clear all;
+
+
+% --- Executes on button press in Pdrawlast.
+function Pdrawlast_Callback(hObject, eventdata, handles)
+% hObject    handle to Pdrawlast (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of Pdrawlast
+
+
+% --- Executes on button press in Prandomwalk.
+function Prandomwalk_Callback(hObject, eventdata, handles)
+% hObject    handle to Prandomwalk (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of Prandomwalk
+
+
+% --- Executes on button press in Pchain.
+function Pchain_Callback(hObject, eventdata, handles)
+% hObject    handle to Pchain (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of Pchain
+
+
+% --- Executes on button press in Pecollision.
+function Pecollision_Callback(hObject, eventdata, handles)
+% hObject    handle to Pecollision (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of Pecollision
+
+
+
+function Pxv_Callback(hObject, eventdata, handles)
+% hObject    handle to Pxv (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of Pxv as text
+%        str2double(get(hObject,'String')) returns contents of Pxv as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function Pxv_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to Pxv (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+
+function Pyv_Callback(hObject, eventdata, handles)
+% hObject    handle to Pyv (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of Pyv as text
+%        str2double(get(hObject,'String')) returns contents of Pyv as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function Pyv_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to Pyv (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
+% --------------------------------------------------------------------
+function File_Callback(hObject, eventdata, handles)
+% hObject    handle to File (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function Untitled_2_Callback(hObject, eventdata, handles)
+% hObject    handle to Untitled_2 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function FileOpen_Callback(hObject, eventdata, handles)
+% hObject    handle to FileOpen (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function Help_Callback(hObject, eventdata, handles)
+% hObject    handle to Help (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function FileClose_Callback(hObject, eventdata, handles)
+% hObject    handle to FileClose (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function HistoryDataOutput_Callback(hObject, eventdata, handles)
+% hObject    handle to HistoryDataOutput (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --------------------------------------------------------------------
+function ParticleImageOutput_Callback(hObject, eventdata, handles)
+% hObject    handle to ParticleImageOutput (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+
+% --- Executes on button press in checkbox5.
+function checkbox5_Callback(hObject, eventdata, handles)
+% hObject    handle to checkbox5 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: get(hObject,'Value') returns toggle state of checkbox5

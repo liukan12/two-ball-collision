@@ -5,6 +5,7 @@ global N_TIME;
 global InputMaxcenterX;
 global InputMaxcenterY;
 global InputMaxdiam;
+global InputMindiam;
 global CHECK_TIMES;
 % P_Nm=500;
 % ITERATION=50;
