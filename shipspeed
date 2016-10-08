@@ -1,0 +1,1433 @@
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Form1
+    Inherits System.Windows.Forms.Form
+
+    'Form 重写 Dispose，以清理组件列表。
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Windows 窗体设计器所必需的
+    Private components As System.ComponentModel.IContainer
+
+    '注意:  以下过程是 Windows 窗体设计器所必需的
+    '可以使用 Windows 窗体设计器修改它。  
+    '不要使用代码编辑器修改它。
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox29 = New System.Windows.Forms.TextBox()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.TextBox28 = New System.Windows.Forms.TextBox()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.TextBox27 = New System.Windows.Forms.TextBox()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.TextBox26 = New System.Windows.Forms.TextBox()
+        Me.TextBox25 = New System.Windows.Forms.TextBox()
+        Me.TextBox24 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox17 = New System.Windows.Forms.TextBox()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.TextBox14 = New System.Windows.Forms.TextBox()
+        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.TextBox23 = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.TextBox22 = New System.Windows.Forms.TextBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.TextBox21 = New System.Windows.Forms.TextBox()
+        Me.TextBox20 = New System.Windows.Forms.TextBox()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.TextBox19 = New System.Windows.Forms.TextBox()
+        Me.TextBox18 = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.GroupBox1.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(62, 29)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(72, 16)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "商船帆力"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(62, 76)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(88, 16)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "商船货物数"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(62, 123)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(72, 16)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "商船人数"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(9, 35)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(136, 16)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "是否有加成航海士"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(9, 71)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(104, 16)
+        Me.Label6.TabIndex = 5
+        Me.Label6.Text = "是否月卡用户"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(743, 29)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(120, 16)
+        Me.Label7.TabIndex = 6
+        Me.Label7.Text = "商船跑商总得分"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(743, 76)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(120, 16)
+        Me.Label8.TabIndex = 7
+        Me.Label8.Text = "载货后相对帆力"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(743, 123)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(120, 16)
+        Me.Label9.TabIndex = 8
+        Me.Label9.Text = "载货后平均速度"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(158, 26)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox1.TabIndex = 19
+        Me.TextBox1.Text = "800"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(158, 73)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox2.TabIndex = 20
+        Me.TextBox2.Text = "700"
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(871, 26)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox8.TabIndex = 26
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(872, 73)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox9.TabIndex = 27
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(871, 120)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox10.TabIndex = 28
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Checked = True
+        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox1.Location = New System.Drawing.Point(153, 34)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(91, 20)
+        Me.CheckBox1.TabIndex = 36
+        Me.CheckBox1.Text = "载货速度"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Checked = True
+        Me.CheckBox2.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox2.Location = New System.Drawing.Point(153, 70)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(43, 20)
+        Me.CheckBox2.TabIndex = 37
+        Me.CheckBox2.Text = "是"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(386, 621)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(106, 34)
+        Me.Button1.TabIndex = 38
+        Me.Button1.Text = "计算"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(657, 621)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(106, 34)
+        Me.Button2.TabIndex = 39
+        Me.Button2.Text = "预设"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Location = New System.Drawing.Point(250, 35)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(91, 20)
+        Me.CheckBox3.TabIndex = 52
+        Me.CheckBox3.Text = "货物返利"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(158, 120)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox4.TabIndex = 22
+        Me.TextBox4.Text = "200"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.TextBox29)
+        Me.GroupBox1.Controls.Add(Me.Label31)
+        Me.GroupBox1.Controls.Add(Me.TextBox28)
+        Me.GroupBox1.Controls.Add(Me.Label30)
+        Me.GroupBox1.Controls.Add(Me.CheckBox8)
+        Me.GroupBox1.Controls.Add(Me.CheckBox7)
+        Me.GroupBox1.Controls.Add(Me.CheckBox6)
+        Me.GroupBox1.Controls.Add(Me.Label29)
+        Me.GroupBox1.Controls.Add(Me.CheckBox5)
+        Me.GroupBox1.Controls.Add(Me.TextBox27)
+        Me.GroupBox1.Controls.Add(Me.Label28)
+        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.TextBox26)
+        Me.GroupBox1.Controls.Add(Me.TextBox25)
+        Me.GroupBox1.Controls.Add(Me.TextBox24)
+        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.TextBox17)
+        Me.GroupBox1.Controls.Add(Me.TextBox16)
+        Me.GroupBox1.Controls.Add(Me.TextBox15)
+        Me.GroupBox1.Controls.Add(Me.TextBox14)
+        Me.GroupBox1.Controls.Add(Me.TextBox13)
+        Me.GroupBox1.Controls.Add(Me.TextBox12)
+        Me.GroupBox1.Controls.Add(Me.Label19)
+        Me.GroupBox1.Controls.Add(Me.Label18)
+        Me.GroupBox1.Controls.Add(Me.Label17)
+        Me.GroupBox1.Controls.Add(Me.Label15)
+        Me.GroupBox1.Controls.Add(Me.Label13)
+        Me.GroupBox1.Controls.Add(Me.Label12)
+        Me.GroupBox1.Controls.Add(Me.ComboBox3)
+        Me.GroupBox1.Controls.Add(Me.Label27)
+        Me.GroupBox1.Controls.Add(Me.ComboBox2)
+        Me.GroupBox1.Controls.Add(Me.Label26)
+        Me.GroupBox1.Controls.Add(Me.TextBox23)
+        Me.GroupBox1.Controls.Add(Me.Label25)
+        Me.GroupBox1.Controls.Add(Me.TextBox22)
+        Me.GroupBox1.Controls.Add(Me.Label24)
+        Me.GroupBox1.Controls.Add(Me.TextBox21)
+        Me.GroupBox1.Controls.Add(Me.TextBox20)
+        Me.GroupBox1.Controls.Add(Me.Label23)
+        Me.GroupBox1.Controls.Add(Me.Label22)
+        Me.GroupBox1.Controls.Add(Me.TextBox19)
+        Me.GroupBox1.Controls.Add(Me.TextBox18)
+        Me.GroupBox1.Controls.Add(Me.Label21)
+        Me.GroupBox1.Controls.Add(Me.Label20)
+        Me.GroupBox1.Controls.Add(Me.TextBox7)
+        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.Label14)
+        Me.GroupBox1.Controls.Add(Me.Label11)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.CheckBox1)
+        Me.GroupBox1.Controls.Add(Me.CheckBox3)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.CheckBox2)
+        Me.GroupBox1.Location = New System.Drawing.Point(53, 206)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(1258, 409)
+        Me.GroupBox1.TabIndex = 64
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "进阶贸易选项"
+        Me.GroupBox1.Visible = False
+        '
+        'TextBox29
+        '
+        Me.TextBox29.Enabled = False
+        Me.TextBox29.Location = New System.Drawing.Point(118, 228)
+        Me.TextBox29.Name = "TextBox29"
+        Me.TextBox29.Size = New System.Drawing.Size(59, 26)
+        Me.TextBox29.TabIndex = 110
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Location = New System.Drawing.Point(12, 231)
+        Me.Label31.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(104, 16)
+        Me.Label31.TabIndex = 109
+        Me.Label31.Text = "返程实际载货"
+        '
+        'TextBox28
+        '
+        Me.TextBox28.Enabled = False
+        Me.TextBox28.Location = New System.Drawing.Point(118, 147)
+        Me.TextBox28.Name = "TextBox28"
+        Me.TextBox28.Size = New System.Drawing.Size(59, 26)
+        Me.TextBox28.TabIndex = 108
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Location = New System.Drawing.Point(12, 150)
+        Me.Label30.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(104, 16)
+        Me.Label30.TabIndex = 107
+        Me.Label30.Text = "进程实际载货"
+        '
+        'CheckBox8
+        '
+        Me.CheckBox8.AutoSize = True
+        Me.CheckBox8.Checked = True
+        Me.CheckBox8.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox8.Location = New System.Drawing.Point(542, 190)
+        Me.CheckBox8.Name = "CheckBox8"
+        Me.CheckBox8.Size = New System.Drawing.Size(59, 20)
+        Me.CheckBox8.TabIndex = 106
+        Me.CheckBox8.Text = "满载"
+        Me.CheckBox8.UseVisualStyleBackColor = True
+        '
+        'CheckBox7
+        '
+        Me.CheckBox7.AutoSize = True
+        Me.CheckBox7.Checked = True
+        Me.CheckBox7.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox7.Location = New System.Drawing.Point(542, 109)
+        Me.CheckBox7.Name = "CheckBox7"
+        Me.CheckBox7.Size = New System.Drawing.Size(59, 20)
+        Me.CheckBox7.TabIndex = 105
+        Me.CheckBox7.Text = "满载"
+        Me.CheckBox7.UseVisualStyleBackColor = True
+        '
+        'CheckBox6
+        '
+        Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Checked = True
+        Me.CheckBox6.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox6.Location = New System.Drawing.Point(520, 307)
+        Me.CheckBox6.Name = "CheckBox6"
+        Me.CheckBox6.Size = New System.Drawing.Size(91, 20)
+        Me.CheckBox6.TabIndex = 104
+        Me.CheckBox6.Text = "自动预测"
+        Me.CheckBox6.UseVisualStyleBackColor = True
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Location = New System.Drawing.Point(172, 353)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(0, 16)
+        Me.Label29.TabIndex = 103
+        '
+        'CheckBox5
+        '
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Location = New System.Drawing.Point(153, 378)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(91, 20)
+        Me.CheckBox5.TabIndex = 102
+        Me.CheckBox5.Text = "自动评估"
+        Me.CheckBox5.UseVisualStyleBackColor = True
+        '
+        'TextBox27
+        '
+        Me.TextBox27.Enabled = False
+        Me.TextBox27.Location = New System.Drawing.Point(432, 305)
+        Me.TextBox27.Name = "TextBox27"
+        Me.TextBox27.Size = New System.Drawing.Size(82, 26)
+        Me.TextBox27.TabIndex = 101
+        Me.TextBox27.Text = "7.5"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(261, 307)
+        Me.Label28.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(184, 16)
+        Me.Label28.TabIndex = 100
+        Me.Label28.Text = "载货预计抵达时间（天）"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(81, 376)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(64, 26)
+        Me.TextBox3.TabIndex = 99
+        Me.TextBox3.Text = "0.2"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(9, 379)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(72, 16)
+        Me.Label10.TabIndex = 98
+        Me.Label10.Text = "风险系数"
+        '
+        'TextBox26
+        '
+        Me.TextBox26.Location = New System.Drawing.Point(1112, 270)
+        Me.TextBox26.Name = "TextBox26"
+        Me.TextBox26.Size = New System.Drawing.Size(69, 26)
+        Me.TextBox26.TabIndex = 97
+        '
+        'TextBox25
+        '
+        Me.TextBox25.Location = New System.Drawing.Point(1036, 270)
+        Me.TextBox25.Name = "TextBox25"
+        Me.TextBox25.Size = New System.Drawing.Size(70, 26)
+        Me.TextBox25.TabIndex = 96
+        '
+        'TextBox24
+        '
+        Me.TextBox24.Location = New System.Drawing.Point(1018, 327)
+        Me.TextBox24.Name = "TextBox24"
+        Me.TextBox24.Size = New System.Drawing.Size(56, 26)
+        Me.TextBox24.TabIndex = 95
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(956, 327)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(56, 26)
+        Me.TextBox5.TabIndex = 94
+        '
+        'TextBox17
+        '
+        Me.TextBox17.Location = New System.Drawing.Point(894, 327)
+        Me.TextBox17.Name = "TextBox17"
+        Me.TextBox17.Size = New System.Drawing.Size(56, 26)
+        Me.TextBox17.TabIndex = 93
+        '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(956, 270)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(74, 26)
+        Me.TextBox16.TabIndex = 92
+        '
+        'TextBox15
+        '
+        Me.TextBox15.Location = New System.Drawing.Point(951, 212)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox15.TabIndex = 91
+        '
+        'TextBox14
+        '
+        Me.TextBox14.Location = New System.Drawing.Point(951, 159)
+        Me.TextBox14.Name = "TextBox14"
+        Me.TextBox14.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox14.TabIndex = 90
+        '
+        'TextBox13
+        '
+        Me.TextBox13.Location = New System.Drawing.Point(916, 96)
+        Me.TextBox13.Name = "TextBox13"
+        Me.TextBox13.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox13.TabIndex = 89
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(916, 35)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox12.TabIndex = 88
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(690, 330)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(208, 16)
+        Me.Label19.TabIndex = 86
+        Me.Label19.Text = "每小时耗费星书总量(1,2,3)"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(690, 215)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(264, 16)
+        Me.Label18.TabIndex = 85
+        Me.Label18.Text = "载货后最大每小时收益预测（万元）"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(690, 102)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(232, 16)
+        Me.Label17.TabIndex = 84
+        Me.Label17.Text = "载货后最大总收益预测（万元）"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(690, 273)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(256, 16)
+        Me.Label15.TabIndex = 82
+        Me.Label15.Text = "载货后平均每星书收益预测(1,2,3)"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(690, 162)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(264, 16)
+        Me.Label13.TabIndex = 81
+        Me.Label13.Text = "载货后平均每小时收益预测（万元）"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(690, 41)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(232, 16)
+        Me.Label12.TabIndex = 80
+        Me.Label12.Text = "载货后平均总收益预测（万元）"
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"1", "2", "3"})
+        Me.ComboBox3.Location = New System.Drawing.Point(490, 186)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(46, 24)
+        Me.ComboBox3.TabIndex = 79
+        Me.ComboBox3.Text = "1"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(378, 194)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(104, 16)
+        Me.Label27.TabIndex = 78
+        Me.Label27.Text = "返程货物星级"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"1", "2", "3"})
+        Me.ComboBox2.Location = New System.Drawing.Point(490, 106)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(46, 24)
+        Me.ComboBox2.TabIndex = 77
+        Me.ComboBox2.Text = "1"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Location = New System.Drawing.Point(378, 110)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(104, 16)
+        Me.Label26.TabIndex = 76
+        Me.Label26.Text = "进程货物星级"
+        '
+        'TextBox23
+        '
+        Me.TextBox23.Location = New System.Drawing.Point(421, 263)
+        Me.TextBox23.Name = "TextBox23"
+        Me.TextBox23.Size = New System.Drawing.Size(93, 26)
+        Me.TextBox23.TabIndex = 75
+        Me.TextBox23.Text = "70"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(261, 266)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(152, 16)
+        Me.Label25.TabIndex = 74
+        Me.Label25.Text = "星书一次返程进货量"
+        '
+        'TextBox22
+        '
+        Me.TextBox22.Location = New System.Drawing.Point(224, 346)
+        Me.TextBox22.Name = "TextBox22"
+        Me.TextBox22.Size = New System.Drawing.Size(64, 26)
+        Me.TextBox22.TabIndex = 73
+        Me.TextBox22.Text = "0"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Location = New System.Drawing.Point(8, 353)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(208, 16)
+        Me.Label24.TabIndex = 72
+        Me.Label24.Text = "拖运距离占返程的百分比(%)"
+        '
+        'TextBox21
+        '
+        Me.TextBox21.Location = New System.Drawing.Point(297, 184)
+        Me.TextBox21.Name = "TextBox21"
+        Me.TextBox21.Size = New System.Drawing.Size(71, 26)
+        Me.TextBox21.TabIndex = 71
+        Me.TextBox21.Text = "3000"
+        '
+        'TextBox20
+        '
+        Me.TextBox20.Location = New System.Drawing.Point(118, 184)
+        Me.TextBox20.Name = "TextBox20"
+        Me.TextBox20.Size = New System.Drawing.Size(59, 26)
+        Me.TextBox20.TabIndex = 70
+        Me.TextBox20.Text = "2000"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(185, 194)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(104, 16)
+        Me.Label23.TabIndex = 69
+        Me.Label23.Text = "返程货物卖价"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(9, 194)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(104, 16)
+        Me.Label22.TabIndex = 68
+        Me.Label22.Text = "返程货物进价"
+        '
+        'TextBox19
+        '
+        Me.TextBox19.Location = New System.Drawing.Point(297, 107)
+        Me.TextBox19.Name = "TextBox19"
+        Me.TextBox19.Size = New System.Drawing.Size(71, 26)
+        Me.TextBox19.TabIndex = 67
+        Me.TextBox19.Text = "11000"
+        '
+        'TextBox18
+        '
+        Me.TextBox18.Location = New System.Drawing.Point(118, 106)
+        Me.TextBox18.Name = "TextBox18"
+        Me.TextBox18.Size = New System.Drawing.Size(59, 26)
+        Me.TextBox18.TabIndex = 66
+        Me.TextBox18.Text = "3000"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(9, 110)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(104, 16)
+        Me.Label21.TabIndex = 65
+        Me.Label21.Text = "进程货物进价"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(185, 110)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(104, 16)
+        Me.Label20.TabIndex = 64
+        Me.Label20.Text = "进程货物卖价"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(169, 263)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(84, 26)
+        Me.TextBox7.TabIndex = 63
+        Me.TextBox7.Text = "70"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(188, 304)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(65, 26)
+        Me.TextBox6.TabIndex = 62
+        Me.TextBox6.Text = "7.5"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(12, 266)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(152, 16)
+        Me.Label14.TabIndex = 61
+        Me.Label14.Text = "星书一次进程进货量"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(12, 307)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(184, 16)
+        Me.Label11.TabIndex = 60
+        Me.Label11.Text = "空载预计抵达时间（天）"
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(903, 166)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(100, 26)
+        Me.TextBox11.TabIndex = 99
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(743, 169)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(152, 16)
+        Me.Label16.TabIndex = 98
+        Me.Label16.Text = "载货后最大速度预测"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(62, 169)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(104, 16)
+        Me.Label3.TabIndex = 100
+        Me.Label3.Text = "进阶贸易选项"
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(173, 169)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(59, 20)
+        Me.CheckBox4.TabIndex = 101
+        Me.CheckBox4.Text = "开启"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Menu
+        Me.ClientSize = New System.Drawing.Size(1353, 891)
+        Me.Controls.Add(Me.CheckBox4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TextBox11)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TextBox10)
+        Me.Controls.Add(Me.TextBox9)
+        Me.Controls.Add(Me.TextBox8)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Font = New System.Drawing.Font("新宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(5, 3, 5, 3)
+        Me.Name = "Form1"
+        Me.Text = "大航海之路跑商模拟软件"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+
+    Dim ShipSpd, TrlTime_To, TrlTime_To_NL, TrlTime_Back, WindInflu, Price_discount, RiskRate_To, RiskRate_Back, Distance_Inspd As Single
+    Dim ShipBp, RelShipSpd_AL, RelShipSpd_AL_To, RelShipSpd_AL_Back, RevShipSpd_AL, MaxShipSpd_AL, RevBookProf_AL_To, RevBookProf_AL_Back, RevShipProf_AL_To, Bookcost_H_To, Bookcost_H_Back, Bookcost_H, RevShipProf_AL_Back, MaxShipProf_AL_To, MaxShipProf_AL_Back, RevShipProf_ALH, MaxShipProf_ALH, RevShipProf_ALH_F, MaxShipProf_ALH_F, Bookcost_To, Bookcost_Back, SingleBookProf, SingleProf_To, SingleProf_Back As Single
+    Dim ShipMem, SingleBookLod_To, SingleBookLod_Back, ShipLod, ShipLod_To, ShipLod_Back, ShipTlod, ShipSp, RelShipSp_AL, RelShipSp_AL_To, RelShipSp_AL_Back, GoodInput_To, DragRate, GoodOutput_To, GoodInput_Back, GoodOutput_Back, BookStar_To, BookStar_Back As Integer
+    Dim Weth_Cap, Weth_monthcard As Boolean
+    Dim RealDis_Sp As Single
+
+    Private Sub Form1_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        
+    End Sub
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        '变量初始化
+        TextBox1.Text = 800
+        TextBox2.Text = 600
+        TextBox3.Text = 0.2
+        TextBox4.Text = 200
+        CheckBox1.Checked = True
+        CheckBox2.Checked = True
+        TextBox18.Text = 3000
+        TextBox19.Text = 11000
+        TextBox6.Text = 7.5
+        TextBox7.Text = 70
+        TextBox23.Text = 70
+        TextBox20.Text = 2100
+        TextBox21.Text = 3200
+        TextBox22.Text = 0
+        CheckBox6.Checked = True
+        CheckBox7.Checked = True
+        CheckBox8.Checked = True
+        TextBox28.Enabled = False
+        TextBox29.Enabled = False
+        TextBox28.Text = 0
+        TextBox29.Text = 0
+
+        ComboBox2.SelectedIndex = 0
+        ComboBox3.SelectedIndex = 0
+
+        GroupBox1.Visible = False
+        Button1.Enabled = False
+
+        '初始化赋值
+        ShipSp = TextBox1.Text
+        ShipLod = TextBox2.Text
+        ShipMem = TextBox4.Text
+        Weth_Cap = CheckBox1.Checked
+        Weth_monthcard = CheckBox2.Checked
+        GoodInput_To = TextBox18.Text
+        GoodOutput_To = TextBox19.Text
+        TrlTime_To = TextBox6.Text
+        SingleBookLod_To = TextBox7.Text
+        SingleBookLod_Back = TextBox23.Text
+        GoodInput_Back = TextBox20.Text
+        GoodOutput_Back = TextBox21.Text
+        DragRate = TextBox22.Text
+        RiskRate_To = TextBox3.Text
+    End Sub
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Public Function Input_Warning(WrongInput)
+        If IsNumeric(WrongInput) Then
+
+            Input_Warning = 1
+        Else
+
+            MessageBox.Show("请保证输入的是数字")
+            ' WrongInput = 1
+            Input_Warning = 0
+
+        End If
+
+    End Function
+
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        '初始化
+        Input_Warning(TextBox1.Text)
+        Input_Warning(TextBox2.Text)
+        Input_Warning(TextBox4.Text)
+        Input_Warning(TextBox18.Text)
+        Input_Warning(TextBox19.Text)
+        Input_Warning(TextBox6.Text)
+        Input_Warning(TextBox7.Text)
+        Input_Warning(TextBox23.Text)
+        Input_Warning(TextBox20.Text)
+        Input_Warning(TextBox21.Text)
+        Input_Warning(TextBox22.Text)
+        Input_Warning(TextBox3.Text)
+        Input_Warning(TextBox17.Text)
+        Input_Warning(TextBox5.Text)
+        Input_Warning(TextBox24.Text)
+
+        If Input_Warning(TextBox1.Text) And _
+        Input_Warning(TextBox2.Text) And _
+        Input_Warning(TextBox4.Text) And _
+        Input_Warning(TextBox18.Text) And _
+        Input_Warning(TextBox19.Text) And _
+        Input_Warning(TextBox6.Text) And _
+        Input_Warning(TextBox7.Text) And _
+        Input_Warning(TextBox23.Text) And _
+Input_Warning(TextBox20.Text) And _
+Input_Warning(TextBox21.Text) And _
+Input_Warning(TextBox22.Text) And _
+Input_Warning(TextBox3.Text) And _
+Input_Warning(TextBox17.Text) And _
+Input_Warning(TextBox5.Text) And _
+Input_Warning(TextBox24.Text) Then
+        Else
+            Exit Sub
+        End If
+
+
+        ShipSp = TextBox1.Text
+        ShipLod = TextBox2.Text
+        ShipMem = TextBox4.Text
+        Weth_Cap = CheckBox1.Checked
+        Weth_monthcard = CheckBox2.Checked
+        GoodInput_To = TextBox18.Text
+        GoodOutput_To = TextBox19.Text
+        TrlTime_To_NL = TextBox6.Text
+        SingleBookLod_To = TextBox7.Text
+        SingleBookLod_Back = TextBox23.Text
+        GoodInput_Back = TextBox20.Text
+        GoodOutput_Back = TextBox21.Text
+        DragRate = TextBox22.Text
+        RiskRate_To = TextBox3.Text
+        BookStar_To = ComboBox2.Text
+        BookStar_Back = ComboBox3.Text
+        TextBox17.Text = 0
+        TextBox5.Text = 0
+        TextBox24.Text = 0
+        Price_discount = 0.3
+
+        '载货相对速度计算
+        If CheckBox7.Checked = False Then
+            ShipLod_To = TextBox28.Text
+            RelShipSp_AL_To = ShipSp * 0.97 ^ (ShipLod_To / 100)
+        Else
+            ShipLod_To = ShipLod
+        End If
+        If CheckBox8.Checked = False Then
+            ShipLod_Back = TextBox29.Text
+            RelShipSp_AL_Back = ShipSp * 0.97 ^ (ShipLod_Back / 100)
+        Else
+            ShipLod_Back = ShipLod
+        End If
+
+        RealDis_Sp = ShipSp * TrlTime_To_NL
+        If CheckBox7.Checked = True Then
+            RelShipSp_AL = ShipSp * 0.97 ^ (ShipLod / 100) '未航海士的影响可加入
+            ShipBp = RelShipSp_AL * ShipLod / 10
+
+        Else
+
+            RelShipSp_AL = RelShipSp_AL_To
+        End If
+        RelShipSpd_AL = RelShipSp_AL * 0.02
+
+        If Weth_Cap And Weth_monthcard Then
+            MaxShipSpd_AL = RelShipSpd_AL * 1.08 '未加入航海士的影响
+        ElseIf Weth_Cap Then
+        ElseIf Weth_monthcard And Weth_Cap = False Then
+            MaxShipSpd_AL = RelShipSpd_AL * 1.08
+        End If
+
+        '载货相对时间计算
+        If TextBox27.Enabled = True And TextBox27.Text <> "" Then
+            TrlTime_To = TextBox27.Text
+        Else
+            TrlTime_To = RealDis_Sp / RelShipSp_AL
+            TextBox27.Text = TrlTime_To
+        End If
+
+        If DragRate = 0 And CheckBox7.Checked = True And CheckBox8.Checked = True Then
+            TrlTime_Back = TrlTime_To / (1 - WindInflu) * (1 + WindInflu) * (1 - DragRate / 100)
+        ElseIf DragRate = 0 And CheckBox8.Checked = False Then
+            TrlTime_Back = RealDis_Sp / RelShipSp_AL_Back * (1 - DragRate / 100)
+        Else
+            TrlTime_Back = RealDis_Sp / ShipSp * (1 - DragRate / 100)
+        End If
+
+
+        '载货利润评估
+        Dim Loadtimes_H_To, Loadtimes_H_Back, Loadtimes_H, Max_Loadtimes_H_To, Max_Loadtimes_H_Back As Single
+        Dim Loading_Time_H As Single
+
+        Loading_Time_H = 0.2    '入港消耗12秒
+        WindInflu = 0.05    '风向系数5%
+
+        SingleProf_To = (GoodOutput_To - GoodInput_To) / 10000
+        SingleProf_Back = (GoodOutput_Back - GoodInput_Back) / 10000
+
+        RevShipProf_AL_To = ShipLod_To * SingleProf_To
+        '拖航最多可带20箱货物
+        If Not DragRate Then
+            RevShipProf_AL_Back = ShipLod_Back * SingleProf_Back
+        Else
+            RevShipProf_AL_Back = 20 * SingleProf_Back
+        End If
+
+        MaxShipProf_AL_To = ShipLod_To * SingleProf_To * (Price_discount + 1)
+        MaxShipProf_AL_Back = ShipLod_Back * SingleProf_Back * (Price_discount + 1)
+
+        '风险自动评估与天数成递增
+        If CheckBox5.Checked Then
+            RiskRate_To = 1 - 0.985 ^ TrlTime_To
+            TextBox3.Text = RiskRate_To
+            RiskRate_Back = 1 - 0.985 ^ TrlTime_Back
+        Else
+            RiskRate_To = TextBox3.Text
+            RiskRate_Back = RiskRate_To
+        End If
+
+        Loadtimes_H_To = (60 / (TrlTime_To + TrlTime_Back + Loading_Time_H * 2)) + 1
+        Loadtimes_H_Back = Loadtimes_H_To - 1
+
+        Max_Loadtimes_H_To = (60 / ((TrlTime_To + TrlTime_Back) * 1.15) + Loading_Time_H * 2) + 1  '未加入顺风因素为15%，未加入航海士因素
+        Max_Loadtimes_H_Back = Max_Loadtimes_H_To
+
+        RevShipProf_ALH = RevShipProf_AL_To * Loadtimes_H_To / (RiskRate_To + 1) + RevShipProf_AL_Back * Loadtimes_H_Back / (RiskRate_Back + 1)
+        MaxShipProf_ALH = MaxShipProf_AL_To * Max_Loadtimes_H_To / (RiskRate_To / 2 + 1) + MaxShipProf_AL_Back * Max_Loadtimes_H_Back / (RiskRate_To / 2 + 1)
+
+
+
+        '星书消耗计算
+        Bookcost_To = ShipLod / SingleBookLod_To - 1
+        If DragRate > 0 Then
+            Bookcost_Back = 0
+        Else
+            Bookcost_Back = ShipLod / SingleBookLod_Back - 1
+        End If
+
+        RevBookProf_AL_To = RevShipProf_AL_To / Bookcost_To
+        If Bookcost_Back >= 1 Then
+            RevBookProf_AL_Back = RevShipProf_AL_Back / Bookcost_Back
+        Else
+            RevBookProf_AL_Back = 0
+        End If
+
+        Bookcost_H_To = Bookcost_To * Loadtimes_H_To
+        Bookcost_H_Back = Bookcost_Back * Loadtimes_H_Back
+        Bookcost_H = Bookcost_H_To + Bookcost_H_Back
+
+        '星书分级计算
+        Dim RevShipProf_To(3), RevShipProf_Back(3), RevShipProf_ALH_A(3) As Single
+        Dim BokCost_To(3), BokCost_Back(3) As Integer
+
+        If BookStar_To = 1 Then
+            RevShipProf_To(0) = RevShipProf_AL_To
+            BokCost_To(0) = Bookcost_To
+        ElseIf BookStar_To = 2 Then
+            RevShipProf_To(1) = RevShipProf_AL_To
+            BokCost_To(1) = Bookcost_To
+        ElseIf BookStar_To = 3 Then
+            RevShipProf_To(2) = RevShipProf_AL_To
+            BokCost_To(2) = Bookcost_To
+        End If
+        If DragRate <> 0 Then
+            RevShipProf_Back(0) = 0
+            RevShipProf_Back(1) = 0
+            RevShipProf_Back(2) = 0
+        Else
+            If BookStar_Back = 1 Then
+                RevShipProf_Back(0) = RevShipProf_AL_Back
+                BokCost_Back(0) = Bookcost_Back
+            ElseIf BookStar_Back = 2 Then
+                RevShipProf_Back(1) = RevShipProf_AL_Back
+                BokCost_Back(1) = Bookcost_Back
+            ElseIf BookStar_Back = 3 Then
+                RevShipProf_Back(2) = RevShipProf_AL_Back
+                BokCost_Back(2) = Bookcost_Back
+            End If
+        End If
+
+        If BookStar_To = 1 Then
+            TextBox17.Text = Bookcost_H_To
+        ElseIf BookStar_To = 2 Then
+            TextBox5.Text = Bookcost_H_To
+        ElseIf BookStar_To = 3 Then
+            TextBox24.Text = Bookcost_H_To
+        End If
+
+        If DragRate = 0 Then
+            If BookStar_Back = 1 Then
+                TextBox17.Text = Int(TextBox17.Text + Bookcost_H_Back) + 1
+            ElseIf BookStar_Back = 2 Then
+                TextBox5.Text = Int(TextBox5.Text + Bookcost_H_Back) + 1
+            ElseIf BookStar_Back = 3 Then
+                TextBox24.Text = Int(TextBox24.Text + Bookcost_H_Back) + 1
+            End If
+        Else
+            Bookcost_H_Back = 0
+        End If
+
+        '星书分级利润计算
+        Dim SingleBookProf_Ttl(3) As Single
+
+        RevShipProf_ALH_A(0) = RevShipProf_To(0) * Loadtimes_H_To / RiskRate_To + RevShipProf_Back(0) * Loadtimes_H_Back / RiskRate_Back
+        SingleBookProf_Ttl(0) = RevShipProf_ALH_A(0) / 60 / ((BokCost_To(0) + 1) * Int(Loadtimes_H / 2 + 1) + (BokCost_Back(0) + 1) * Int(Loadtimes_H / 2))
+
+        RevShipProf_ALH_A(1) = RevShipProf_To(1) * Loadtimes_H_To / RiskRate_To + RevShipProf_Back(1) * Loadtimes_H_Back / RiskRate_Back
+        SingleBookProf_Ttl(1) = RevShipProf_ALH_A(1) / 60 / ((BokCost_To(1) + 1) * Int(Loadtimes_H / 2 + 1) + (BokCost_Back(1) + 1) * Int(Loadtimes_H / 2))
+
+        RevShipProf_ALH_A(2) = RevShipProf_To(2) * Loadtimes_H_To / RiskRate_To + RevShipProf_Back(2) * Loadtimes_H_Back / RiskRate_Back
+        SingleBookProf_Ttl(2) = RevShipProf_ALH_A(2) / 60 / ((BokCost_To(2) + 1) * Int(Loadtimes_H / 2 + 1) + (BokCost_Back(2) + 1) * Int(Loadtimes_H / 2))
+
+        '结果输出
+        TextBox8.Text = ShipBp
+        TextBox9.Text = RelShipSp_AL
+        TextBox10.Text = RelShipSpd_AL
+        TextBox11.Text = MaxShipSpd_AL
+        TextBox12.Text = RevShipProf_AL_To
+        TextBox13.Text = MaxShipProf_AL_To
+        TextBox14.Text = RevShipProf_ALH
+        TextBox15.Text = MaxShipProf_ALH
+        TextBox16.Text = SingleBookProf_Ttl(0)
+        TextBox25.Text = SingleBookProf_Ttl(1)
+        TextBox26.Text = SingleBookProf_Ttl(2)
+
+
+
+        '内部变量还原
+        For i = 0 To 3
+            RevShipProf_To(i) = 0
+            RevShipProf_Back(i) = 0
+            RevShipProf_ALH_A(i) = 0
+            BokCost_To(i) = 0
+            BokCost_Back(i) = 0
+        Next
+
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        ShipSp = TextBox1.Text
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+        ShipLod = TextBox2.Text
+    End Sub
+
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+        ShipMem = TextBox4.Text
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        Weth_Cap = CheckBox1.Checked
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+        Weth_monthcard = CheckBox2.Checked
+    End Sub
+
+    Private Sub TextBox18_TextChanged(sender As Object, e As EventArgs) Handles TextBox18.TextChanged
+        GoodInput_To = TextBox18.Text
+    End Sub
+
+    Private Sub TextBox19_TextChanged(sender As Object, e As EventArgs) Handles TextBox19.TextChanged
+            GoodOutput_To = TextBox19.Text
+    End Sub
+
+    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TextBox6.TextChanged
+        TrlTime_To = TextBox6.Text
+    End Sub
+
+    Private Sub TextBox7_TextChanged(sender As Object, e As EventArgs) Handles TextBox7.TextChanged
+        SingleBookLod_To = TextBox7.Text
+    End Sub
+
+
+
+
+
+    Private Sub TextBox20_TextChanged(sender As Object, e As EventArgs) Handles TextBox20.TextChanged
+        GoodInput_Back = TextBox20.Text
+    End Sub
+
+    Private Sub TextBox21_TextChanged(sender As Object, e As EventArgs) Handles TextBox21.TextChanged
+        GoodOutput_Back = TextBox21.Text
+    End Sub
+
+    Private Sub TextBox23_TextChanged(sender As Object, e As EventArgs) Handles TextBox23.TextChanged
+        SingleBookLod_Back = TextBox23.Text
+    End Sub
+
+    Private Sub TextBox22_TextChanged(sender As Object, e As EventArgs) Handles TextBox22.TextChanged
+        DragRate = TextBox22.Text
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        TextBox1.Text = 800
+        TextBox2.Text = 600
+        TextBox4.Text = 200
+        CheckBox1.Checked = True
+        CheckBox2.Checked = True
+        TextBox18.Text = 3000
+        TextBox19.Text = 11000
+        TextBox6.Text = 7.5
+        TextBox7.Text = 70
+        TextBox23.Text = 70
+        TextBox20.Text = 2100
+        TextBox21.Text = 3200
+        TextBox22.Text = 0
+        ComboBox2.SelectedIndex = 1
+        ComboBox3.SelectedIndex = 1
+        TextBox17.Text = 0
+        TextBox5.Text = 0
+        TextBox24.Text = 0
+        TextBox3.Text = 0.2
+        CheckBox5.Checked = False
+        CheckBox7.Checked = True
+        CheckBox8.Checked = True
+        TextBox28.Enabled = False
+        TextBox29.Enabled = False
+        TextBox28.Text = 0
+        TextBox29.Text = 0
+        TextBox27.Enabled = False
+        CheckBox6.Checked = True
+        Button1.Enabled = True
+
+        ShipSp = TextBox1.Text
+        ShipLod = TextBox2.Text
+        ShipMem = TextBox4.Text
+        Weth_Cap = CheckBox1.Checked
+        Weth_monthcard = CheckBox2.Checked
+        GoodInput_To = TextBox18.Text
+        GoodOutput_To = TextBox19.Text
+        TrlTime_To = TextBox6.Text
+        SingleBookLod_To = TextBox7.Text
+        SingleBookLod_Back = TextBox23.Text
+        GoodInput_Back = TextBox20.Text
+        GoodOutput_Back = TextBox21.Text
+        DragRate = TextBox22.Text
+        BookStar_To = ComboBox2.Text
+        BookStar_Back = ComboBox3.Text
+    End Sub
+    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
+
+
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs)
+        BookStar_To = ComboBox2.Text
+    End Sub
+
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs)
+        BookStar_Back = ComboBox3.Text
+    End Sub
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents TextBox26 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox25 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox24 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox17 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox16 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox15 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox14 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox13 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label27 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents Label26 As System.Windows.Forms.Label
+    Friend WithEvents TextBox23 As System.Windows.Forms.TextBox
+    Friend WithEvents Label25 As System.Windows.Forms.Label
+    Friend WithEvents TextBox22 As System.Windows.Forms.TextBox
+    Friend WithEvents Label24 As System.Windows.Forms.Label
+    Friend WithEvents TextBox21 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox20 As System.Windows.Forms.TextBox
+    Friend WithEvents Label23 As System.Windows.Forms.Label
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Friend WithEvents TextBox19 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox18 As System.Windows.Forms.TextBox
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+
+
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+        RiskRate_To = TextBox3.Text
+    End Sub
+    Friend WithEvents Label28 As System.Windows.Forms.Label
+    Friend WithEvents TextBox27 As System.Windows.Forms.TextBox
+    Friend WithEvents Label29 As System.Windows.Forms.Label
+    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
+
+
+    Private Sub CheckBox5_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox5.CheckedChanged
+
+    End Sub
+    Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
+    Friend WithEvents TextBox29 As System.Windows.Forms.TextBox
+    Friend WithEvents Label31 As System.Windows.Forms.Label
+    Friend WithEvents TextBox28 As System.Windows.Forms.TextBox
+    Friend WithEvents Label30 As System.Windows.Forms.Label
+    Friend WithEvents CheckBox8 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox7 As System.Windows.Forms.CheckBox
+
+    Private Sub CheckBox7_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox7.CheckedChanged
+        If CheckBox7.Checked = True Then
+            TextBox28.Enabled = False
+        Else
+            TextBox28.Enabled = True
+            If IsNumeric(TextBox28.Text) Then
+                ShipLod_To = TextBox28.Text
+            Else
+                TextBox28.Text = 0
+                ShipLod_To = TextBox28.Text
+            End If
+        End If
+    End Sub
+    Private Sub CheckBox8_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox8.CheckedChanged
+        If CheckBox8.Checked = True Then
+            TextBox29.Enabled = False
+        Else
+            TextBox29.Enabled = True
+            If IsNumeric(TextBox29.Text) Then
+                ShipLod_Back = TextBox29.Text
+            Else
+                TextBox29.Text = 0
+                ShipLod_Back = TextBox29.Text
+            End If
+
+        End If
+    End Sub
+
+    Private Sub CheckBox6_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox6.CheckedChanged
+        If CheckBox6.Checked = True Then
+            TextBox27.Enabled = False
+        Else
+            TextBox27.Enabled = True
+            If IsNumeric(TextBox27.Text) Then
+                TrlTime_To = TextBox27.Text
+            Else
+                TextBox27.Text = TrlTime_To_NL
+
+            End If
+        End If
+    End Sub
+
+
+    Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox4.CheckedChanged
+        If CheckBox4.Checked = True Then
+            GroupBox1.Visible = True
+        Else
+            GroupBox1.Visible = False
+        End If
+    End Sub
+End Class
