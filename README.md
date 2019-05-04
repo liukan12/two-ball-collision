@@ -1,2 +1,2 @@
 # two-ball-collision
-this is a code for simulation two ball collision behavior
+code for multiply particle collision simulation
